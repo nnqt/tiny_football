@@ -24,6 +24,18 @@
     <ClCompile Include="entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sprite_sheet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blue_player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RenderWindow.hpp">
@@ -32,8 +44,31 @@
     <ClInclude Include="Entity.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Math.hpp">
+    <ClInclude Include="Utility.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteSheet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BluePlayer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollingBG.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\hockey.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="assets\rink.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\vclib\SDL2_image\include;C:\vclib\SDL2\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\vclib\SDL2_image\lib\x64;C:\vclib\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\vclib\SDL2_ttf\include;C:\vclib\SDL2_image\include;C:\vclib\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\vclib\SDL2_ttf\lib\x64;C:\vclib\SDL2_image\lib\x64;C:\vclib\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,7 +112,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -132,14 +132,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ball.cpp" />
+    <ClCompile Include="blue_player.cpp" />
     <ClCompile Include="entity.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="render_window.cpp" />
+    <ClCompile Include="sprite_sheet.cpp" />
     <ClCompile Include="tiny_football.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ball.hpp" />
+    <ClInclude Include="BluePlayer.hpp" />
     <ClInclude Include="Entity.hpp" />
-    <ClInclude Include="Math.hpp" />
+    <ClInclude Include="Player.hpp" />
+    <ClInclude Include="ScrollingBG.hpp" />
+    <ClInclude Include="Utility.hpp" />
     <ClInclude Include="RenderWindow.hpp" />
+    <ClInclude Include="SpriteSheet.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\hockey.png" />
+    <Image Include="assets\rink.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
