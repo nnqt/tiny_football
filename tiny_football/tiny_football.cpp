@@ -538,6 +538,7 @@ void update()
 	//move with ball goalKeeper1
 	if (ball.checkCollison(goalKeeper1.mColliders) )
 	{
+		SDL_Delay(500);
 		resetLocationRed();
 	}
 
@@ -557,6 +558,7 @@ void update()
 	//move with ball goalKeeper2
 	if (ball.checkCollison(goalKeeper2.mColliders))
 	{
+		SDL_Delay(500);
 		resetLocationBlue();
 	}
 
@@ -681,11 +683,13 @@ void update()
 	{
 		point2++;
 		gameState = 0;
+		SDL_Delay(1000);
 	}
 	if (ball.checkCollison(getPointArea2))
 	{
 		point1++;
 		gameState = 0;
+		SDL_Delay(1000);
 	}
 	
 
